@@ -16,7 +16,7 @@ async function ProductPage({
     slug: string;
   };
 }) {
-  const { slug } = await params;
+  const { slug } = params;
   const product = await getProductBySlug(slug);
 
   console.log(
